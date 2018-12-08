@@ -1,0 +1,9 @@
+{
+    "name": "web_socks_erver",
+    "version": "0.1.0",
+    "main": "main.js",
+    "dependencies": {
+        "electron": "^1.7.10",
+        "websocket": "^1.0.25"
+    }
+}

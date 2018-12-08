@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.container {
+            width: 100%;
+            height: 100%;
+            border: 1px solid gray;
+        }
+
+        title {
+            margin: 0;
+            text-align: center;
+            background: #169916;
+            font-size: 20px;
+        }
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+        terminal{
+            margin-left: 0px;
+            padding:1em;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="ipcForm">
+        <div class="container">
+
+            <title>Tester Server V1</title>
+
+            <article>
+                <textarea id="msg" name="message" rows="10" cols="30">
+                Type message here
+                </textarea>
+                <button type="button" onclick="sendForm()" value="Submit">Send</button>
+                <button id="conbtn" type="button" onclick="connect()" value="Submit">Connect/Disconnect</button>
+                <textarea type="text" id="consoleop" value="Console output"></textarea>
+            </article>
+        </div>
+    </form>
+</body>
+
+<script src='renderFile.js'>
+</script>
+</body>
+
+</html>
